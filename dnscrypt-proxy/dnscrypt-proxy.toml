@@ -32,7 +32,7 @@
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
 
-listen_addresses = ['0.0.0.0:5053']
+listen_addresses = ['0.0.0.0:5053', '[::1]:5053']
 
 
 ## Maximum number of simultaneous client connections to accept
@@ -54,7 +54,7 @@ max_clients = 250
 ipv4_servers = true
 
 # Use servers reachable over IPv6 -- Do not enable if you don't have IPv6 connectivity
-ipv6_servers = false
+ipv6_servers = true
 
 # Use servers implementing the DNSCrypt protocol
 dnscrypt_servers = true
